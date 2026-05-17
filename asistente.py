@@ -21,7 +21,7 @@ from sentence_transformers import SentenceTransformer
 import ollama
 
 # ========= CONFIGURACIÓN =========
-TOKEN = "8951681749:AAGA0u20O0h6tPq35Pevcr5HXdy1V69ptIU"
+TOKEN = "TOKENDETELEGRAM"
 
 # Modelo de Ollama (con tool calling)
 OLLAMA_MODEL = "granite4:1b"  # También funciona con "llama3.2:3b" o "mistral:7b"
