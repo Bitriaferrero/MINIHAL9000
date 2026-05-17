@@ -1,0 +1,56 @@
+# En CachyOS/Arch Linux
+sudo pacman -S python-pip
+
+
+# Instalar git y curl (si no los tienes)
+sudo pacman -S git curl wget
+
+# Instalar ollama si no lo tienes
+sudo pacman -S ollama
+
+# Iniciar ollama
+systemctl --user start ollama
+# o si prefieres que arranque siempre
+systemctl --user enable --now ollama
+
+# Esto SÍ funciona 100%
+ollama pull qwen2.5:7b-instruct-q4_K_M
+
+# Probarlo
+ollama run qwen2.5:7b-instruct-q4_K_M "Hola, ¿cómo estás?"
+
+
+
+
+-----------------------------------------------------------
+# El nombre correcto según los logs (viste pulls exitosos)
+ollama pull qwen3:0.6b
+
+# Si ese no existe, prueba las variantes del artículo:
+ollama pull qwen:0.6b
+# o
+ollama run qwen3:0.6b
+-----------------------------------------------------------
+
+
+-------------------PYTHON  ENV -------------------
+python -m venv nombre_de_tu_entorno
+
+source nombre_de_tu_entorno/bin/activate
+source nombre_de_tu_entorno/bin/activate.fish
+
+---------------------------------------------------
+✅ Paso 3: Verificar que todo funciona
+Desde Telegram, prueba:
+
+Hola, ¿cómo te llamas?
+/aprender Mi nombre es Rorschach y uso CachyOS
+/comando ls -la
+/comando date
+
+---------------------------------------------------
+
+/aprender nombre = HAL9000 → Guarda en memoria
+/recordar nombre → Recupera
+/personalidad nombre = JARVIS → Cambia personalidad
+/comando ls -la → Fuerza ejecución

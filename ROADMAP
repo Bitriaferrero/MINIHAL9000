@@ -1,0 +1,15 @@
+
+   Fase 	Mejora	Dificultad	Riesgo	Tiempo
+✅ Fase 1 	Mover reglas a archivo externo	Baja	Muy bajo	15 min
+✅ Fase 2	Añadir tool calling nativo	Media	Bajo	30 min
+
+✅ Fase 3	Mejorar memoria con SQLite	Media	Medio	45 min
+Característica                   	Estado
+Memoria SQLite	                          ✅
+Embeddings para búsqueda semántica        ✅
+Entiende sinónimos	                  ✅
+Mantiene Fase 2 (tool calling + voz)	  ✅
+Compatible con comandos anteriores	  ✅
+
+Fase 4	Búsqueda híbrida (BM25 + embeddings)	Alta	Medio
+
